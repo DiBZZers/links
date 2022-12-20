@@ -1,0 +1,131 @@
+/* @font-face {
+  font-family: "BuenosAires";
+  src: url('./fonts/BuenosAiresWeb-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BuenosAires";
+  src:url('./fonts/BuenosAiresWeb-Book.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BuenosAires";
+  src: url('./fonts/BuenosAiresWeb-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BuenosAires";
+  src: url('./fonts/BuenosAiresWeb-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "BuenosAires",sans-serif;
+}
+
+/* unvisited link */
+a:link,  a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content{
+  background: #6a00ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #E100FF, #6a00ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #E100FF, #6a00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+.main-container{
+  height: 90vh;
+  }
+
+.profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.profile-area .display-pic{
+  padding: 5% 20px 10px 20px;
+}
+.profile-area .display-pic img{
+  height: 120px;
+  width: 120px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+
+.profile-area .handle{
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.profile-area .bio{
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.links-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links-area .link-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.links-area .link-container a{
+  color: #fff;
+  background-color: rgb(88, 0, 132);
+  padding: 10px 10px;
+  min-width: 250px;
+  width: 20vw;
+  text-align: center;
+  border-radius: 20px;
+  transition: 0.4s;
+  font-size: 1rem;
+  border: 1px solid rgb(75, 0, 150);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+
+.links-area .link-container a:hover{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  top: 5px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: #fff;
+  font-family: 4rem;
+}
