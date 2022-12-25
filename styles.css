@@ -129,3 +129,8 @@ a:link,  a:visited, a:hover, a:active {
   color: #fff;
   font-family: 4rem;
 }
+
+.bio{
+  padding:.2rem 3rem;
+  text-align: center;
+}
